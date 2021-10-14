@@ -1,9 +1,18 @@
 import './App.css';
+import AnimalCard from '../AnimalCard/AnimalCard';
+import animals from './data';
 
 function App() {
   return (
-    <div className="App">
-      Wrapper app
+    <div className="wrapper">
+      {animals.map(animal =>
+        <AnimalCard
+          diet={animal.diet}
+          key={animal.name}
+          name={animal.name}
+          size={animal.size}
+        />
+      )}
     </div>
   );
 }
