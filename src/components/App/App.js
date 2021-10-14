@@ -11,6 +11,7 @@ function App() {
           key={animal.name}
           name={animal.name}
           size={animal.size}
+          scientificName={animal.scientificName}
         />
       )}
     </div>
